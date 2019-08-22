@@ -24,7 +24,8 @@ Isolate the data for test cases., use synthetic data in test cases.
 
 For long running test cases, maintain a different test suite.
 
-Test case should be the same and data load/payload should decide the time required to run a test case, so long running test cases should be decided by its payload and test case should not be static.
+Test case should be the same and data load/payload should decide the time required to run a test case, 
+so long running test cases should be decided by its payload and test case should not be static.
 
 Data driven test cases. Feed different data sets to the test cases.
 
@@ -32,3 +33,12 @@ Call the same API test and pass in negative test data and check the output in fu
 
 Externalise the parameters to the test cases.
 Include the expected output parameters to the test cases for the verification.
+
+Code should contain comments.
+Docstring of the tests mentioning scenario of the test, parameters, and what it will test.
+Print the steps in the console (maintain comments in code as well) of the test cases like XX completed, 
+executing the next step XX. 
+
+———————————————————————CLOUD Automation———————————————————————————————————————————
+15 scenarios to complete in 1 week by me and Anusha. There are total 96 scenarios.
+——————————————————————————————————————————————————————————————————————————————————
