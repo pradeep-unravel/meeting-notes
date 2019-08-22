@@ -1,0 +1,34 @@
+22nd August 2019 Meeting with Arjun
+
+
+New automation should be done for Cloud and On-Prem both.
+
+Testing end-to-end for whole product is not required.
+
+80% of the product will be tested through API driven model.
+20% of the product will be tested by integration, UI based test or end-to-end testing.
+
+Divided use cases scenarios as components.
+
+API test cases also can be run as component level.
+
+Model for other test cases like Tez etc.
+
+Currently:
+Running test case in backend and update in JSON and validate it as part of application page.
+LR daemon populates the elastic search in test cases.
+
+We have to separate the UI and testing. Validate a core logic in the backend, no need to validate end-to-end UI.
+
+Isolate the data for test cases., use synthetic data in test cases.
+
+For long running test cases, maintain a different test suite.
+
+Test case should be the same and data load/payload should decide the time required to run a test case, so long running test cases should be decided by its payload and test case should not be static.
+
+Data driven test cases. Feed different data sets to the test cases.
+
+Call the same API test and pass in negative test data and check the output in future.
+
+Externalise the parameters to the test cases.
+Include the expected output parameters to the test cases for the verification.
