@@ -1,0 +1,37 @@
+Pilot KT Session
+
+
+HDI Test cases:
+
+Unravel Node will be a different node
+
+Master node will have: 
+unravel_agent 
+&
+unravel_es directories
+Slave nodes will contain only unravel_agent directory.
+
+/usr/local/unravel
+
+unravel_emr_bootstrap.sh
+
+
+Steps to verify:
+1. If unravel daemons are running (use ps command)
+2. Check the user/group permissions for the unravel dirs
+3. Check the xmls for spark and other apps (pre hooks and posthooks)
+4. Run MR, Spark, Hive-MR, Hive-Tea
+5. Check the exceptions and errors in /tmp/unravel/unravel_es.log
+6. Check the sql tables of unravel and elastic search.
+7. Check something unravel_LR
+
+
+Different scenarios for HDI:
+On HDI all 3 dirs are created es, client and agent
+HDI uses hdfs user while EMR uses hadoop user
+
+Check unravel.lr.log and other log files if daemons are not running.
+
+Daemons for spark
+Spark worker (SW)
+Spark Executor (SE)
